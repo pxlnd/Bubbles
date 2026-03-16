@@ -1,0 +1,1 @@
+{"mode":"scene","coordinateSystem":{"origin":"center of ground plane","x":"left/right","y":"up/down","z":"depth"},"sphere":{"x":0,"y":1,"z":0,"vx":0,"vy":0,"vz":0,"grounded":true,"color":"#ff5c8a","radius":1},"ground":{"width":18,"depth":18,"color":"#8dd67c","tiltX":0,"tiltZ":0},"camera":{"x":0,"y":4.6,"z":10.5}}
