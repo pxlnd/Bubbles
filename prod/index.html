@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubles</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <canvas id="scene" aria-label="Game scene"></canvas>
+      <div class="camera-panel" id="control-panel">
+        <div class="camera-panel__title">Camera</div>
+        <label class="camera-panel__row">
+          <span>X</span>
+          <input id="cam-x" type="range" min="-20" max="20" step="0.1" />
+          <output id="cam-x-value"></output>
+        </label>
+        <label class="camera-panel__row">
+          <span>Y</span>
+          <input id="cam-y" type="range" min="4" max="30" step="0.1" />
+          <output id="cam-y-value"></output>
+        </label>
+        <label class="camera-panel__row">
+          <span>Z</span>
+          <input id="cam-z" type="range" min="6" max="36" step="0.1" />
+          <output id="cam-z-value"></output>
+        </label>
+        <label class="camera-panel__row">
+          <span>Focal</span>
+          <input id="cam-focal" type="range" min="250" max="1400" step="5" />
+          <output id="cam-focal-value"></output>
+        </label>
+        <label class="camera-panel__row">
+          <span>Pitch</span>
+          <input id="cam-pitch" type="range" min="-89" max="89" step="1" />
+          <output id="cam-pitch-value"></output>
+        </label>
+        <label class="camera-panel__row">
+          <span>Yaw</span>
+          <input id="cam-yaw" type="range" min="-180" max="180" step="1" />
+          <output id="cam-yaw-value"></output>
+        </label>
+        <label class="camera-panel__row">
+          <span>Roll</span>
+          <input id="cam-roll" type="range" min="-180" max="180" step="1" />
+          <output id="cam-roll-value"></output>
+        </label>
+        <div class="camera-panel__title">Light</div>
+        <label class="camera-panel__row">
+          <span>Pitch</span>
+          <input id="light-pitch" type="range" min="-89" max="89" step="1" />
+          <output id="light-pitch-value"></output>
+        </label>
+        <label class="camera-panel__row">
+          <span>Yaw</span>
+          <input id="light-yaw" type="range" min="-180" max="180" step="1" />
+          <output id="light-yaw-value"></output>
+        </label>
+        <div class="camera-panel__title">Physics</div>
+        <label class="camera-panel__row">
+          <span>Gravity</span>
+          <input id="phys-gravity" type="range" min="1" max="40" step="0.5" />
+          <output id="phys-gravity-value"></output>
+        </label>
+        <label class="camera-panel__row">
+          <span>Jelly</span>
+          <input id="phys-jelly" type="range" min="0" max="2.5" step="0.05" />
+          <output id="phys-jelly-value"></output>
+        </label>
+      </div>
+    </div>
+    <script src="./vendor/three.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
