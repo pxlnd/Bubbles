@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top, #dff7ff 0%, #a9d5ff 40%, #78a5d6 100%);
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.app-shell {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.camera-panel {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 280px;
+  padding: 14px 14px 12px;
+  border-radius: 14px;
+  background: rgba(9, 24, 38, 0.78);
+  color: #f3fbff;
+  backdrop-filter: blur(8px);
+}
+
+.camera-panel__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.camera-panel__row {
+  display: grid;
+  grid-template-columns: 60px 1fr 52px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.camera-panel__row output {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.camera-panel input[type="range"] {
+  width: 100%;
+}
+
+#scene {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  outline: none;
+}
+
+.status {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  max-width: min(420px, calc(100vw - 40px));
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(10, 27, 44, 0.82);
+  color: #f4fbff;
+  font-size: 14px;
+  line-height: 1.4;
+}
